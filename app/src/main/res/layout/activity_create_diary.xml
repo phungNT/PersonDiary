@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/a"
+    tools:context=".CreateDiary">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Diary"
+        android:textSize="29dp"
+        android:textColor="@color/cardview_dark_background"
+        android:textAlignment="center"
+        android:layout_margin="40dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/txtDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Date - Time"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        />
+    <EditText
+        android:id="@+id/edtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Title"
+        android:textSize="20dp"
+        android:maxHeight="50dp"
+        android:scrollbars="horizontal"
+        android:layout_marginLeft="10dp"
+        />
+    <EditText
+        android:id="@+id/edtContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Content"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:inputType="textMultiLine"
+        android:textColor="@color/colorPrimaryDark"
+        android:maxHeight="260dp"
+        android:scrollbars="horizontal"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp">
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="16dp"
+            android:text="Cancel"
+            android:shadowColor="@color/colorAccent"
+            android:layout_marginLeft="10dp"/>
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="16dp"
+            android:text="Save"
+            android:shadowColor="@color/colorAccent"
+            android:layout_marginLeft="300dp"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
